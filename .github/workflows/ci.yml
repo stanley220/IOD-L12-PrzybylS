@@ -5,6 +5,10 @@ on: [push, pull_request]
 permissions:
   contents: read
 
+defaults:
+  run:
+    working-directory: 03-CI
+
 jobs:
   build:
     runs-on: ubuntu-24.04
